@@ -19,6 +19,11 @@ input, button {
   font-size: inherit;
 }
 
+button {
+  background: none;
+  cursor: pointer;
+}
+
 input:focus, button:focus {
   outline: none;
 }
@@ -100,4 +105,18 @@ html, body {
 }
 .header__img img {
   border-radius: 40px 40px 40px 0;
+}
+
+.form {
+  background: #fff;
+  box-shadow: 0 17px 42px rgba(0, 0, 0, 0.12);
+  border-radius: 29px;
+  height: 58px;
+}
+.form__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding-left: 72px;
 }/*# sourceMappingURL=main.css.map */
