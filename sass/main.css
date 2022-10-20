@@ -114,9 +114,21 @@ html, body {
   height: 58px;
 }
 .form__label {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
   padding-left: 72px;
+}
+.form__label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 24px;
+  left: 19px;
+  width: 24px;
+  height: 19px;
+  background-image: url("./../images/icons/mail.svg");
+  background-size: initial;
 }/*# sourceMappingURL=main.css.map */
