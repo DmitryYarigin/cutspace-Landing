@@ -3,6 +3,11 @@
     box-shadow: 0  17px 42px rgba(0, 0, 0, 0.12);
     border-radius: 29px;
     height: 58px;
+    transition: 0.2s ease-in;
+
+    &--active {
+        box-shadow: 0 17px 42px  rgba(247, 132, 52, 0.27);
+    }
 
     &__label {
         position: relative;
@@ -19,12 +24,25 @@
             content: '';
             display: block;
             position: absolute;
-            top: 24px;
-            left: 19px;
+            top: 19px;
+            left: 22px;
             width: 24px;
             height: 19px;
             background-image: url('./../images/icons/mail.svg');
             background-size: initial;
         }
+    }
+    &__input {
+        flex-grow: 1;
+        margin-right: 10px;
+
+        &::placeholder {
+            color: #bbb;
+        }
+
+    }
+
+    &__button {
+
     }
 }

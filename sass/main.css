@@ -19,7 +19,7 @@ input, button {
   font-size: inherit;
 }
 
-button {
+button, input[type=submit] {
   background: none;
   cursor: pointer;
 }
@@ -103,8 +103,11 @@ html, body {
   line-height: 27px;
   margin-bottom: 1em;
 }
-.header__img img {
+.header__img {
   border-radius: 40px 40px 40px 0;
+}
+.header__form {
+  margin-top: 42px;
 }
 
 .form {
@@ -112,6 +115,10 @@ html, body {
   box-shadow: 0 17px 42px rgba(0, 0, 0, 0.12);
   border-radius: 29px;
   height: 58px;
+  transition: 0.2s ease-in;
+}
+.form--active {
+  box-shadow: 0 17px 42px rgba(247, 132, 52, 0.27);
 }
 .form__label {
   position: relative;
@@ -125,10 +132,46 @@ html, body {
   content: "";
   display: block;
   position: absolute;
-  top: 24px;
-  left: 19px;
+  top: 19px;
+  left: 22px;
   width: 24px;
   height: 19px;
   background-image: url("./../images/icons/mail.svg");
   background-size: initial;
+}
+.form__input {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+.form__input::-moz-placeholder {
+  color: #bbb;
+}
+.form__input:-ms-input-placeholder {
+  color: #bbb;
+}
+.form__input::placeholder {
+  color: #bbb;
+}
+.button {
+  display: inline-block;
+  height: 58px;
+  padding: 0 37px;
+  border-radius: 29px;
+  background-color: #f78434;
+  line-height: 58px;
+  font-weight: 700;
+  color: #fff;
+  transition: background-color 0.2s ease-in;
+}
+.button:hover {
+  background-color: #ff6a00;
+}
+
+.clients {
+  padding: 100px 0 90px 0;
+}
+.clients__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
