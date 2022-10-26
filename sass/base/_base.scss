@@ -11,4 +11,9 @@ html,body {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+
+    &--fluid {
+        max-width: unset;
+        width: 100%;
+    }
 }

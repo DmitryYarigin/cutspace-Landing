@@ -1,5 +1,9 @@
 .img-card {
-    
+    width: 385px;
+
+    & + & {
+        margin-left: 32px;
+    }
     // .img-card__img
     
     &__img {
