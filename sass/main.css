@@ -55,6 +55,9 @@ html, body {
   max-width: unset;
   width: 100%;
 }
+.container--no-padding {
+  padding: 0;
+}
 
 .nav {
   padding-top: 35px;
@@ -192,7 +195,13 @@ html, body {
 }
 .objects__row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1495px) {
+  .objects__row {
+    justify-content: flex-end;
+  }
 }
 .objects__img {
   display: flex;
@@ -200,8 +209,11 @@ html, body {
   align-items: flex-start;
 }
 .objects__text {
-  max-width: 543px;
+  flex-shrink: 0;
+  width: 374px;
   padding-left: 181px;
+  padding-right: 150px;
+  box-sizing: content-box;
 }
 .objects__text p + p {
   margin-top: 20px;
@@ -221,6 +233,7 @@ html, body {
 
 .img-card {
   width: 385px;
+  position: relative;
 }
 .img-card + .img-card {
   margin-left: 32px;
@@ -230,6 +243,11 @@ html, body {
 }
 .img-card--rounder .img-card__img {
   border-radius: 20px;
+}
+.img-card__info {
+  position: absolute;
+  right: -47px;
+  bottom: 87px;
 }
 
 .card-info {
@@ -245,4 +263,36 @@ html, body {
 }
 .card-info__title {
   font-weight: 700;
+}
+
+.cta {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.cta__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 95px;
+  border-radius: 20px;
+  background-color: #58bebf;
+  color: #fff;
+}
+.cta__img {
+  margin-top: 60px;
+  padding: 25px 25px 0 0;
+  background-color: #fff;
+  border-radius: 0 20px 0 0;
+}
+.cta__text {
+  width: 364px;
+}
+.cta__text p {
+  width: 320px;
+}
+.cta__title {
+  margin-bottom: 15px;
+}
+.cta__buttons-row {
+  margin-top: 30px;
 }/*# sourceMappingURL=main.css.map */

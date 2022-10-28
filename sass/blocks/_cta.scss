@@ -1,0 +1,49 @@
+.cta {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+    // .cta__block
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 95px;
+        border-radius: 20px;
+        background-color: #58bebf;  
+        color: #fff;  
+    }
+
+    // .cta__img
+
+    &__img {
+        margin-top: 60px;
+        padding: 25px 25px 0 0;
+        background-color: #fff;
+        border-radius: 0 20px 0 0;
+    }
+    // .cta__text
+
+    &__text {
+        width: 364px;
+
+        p {
+            width: 320px;
+        }
+    }
+
+    // .cta__title
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    // .cta__buttons-row
+
+    &__buttons-row {
+        margin-top: 30px;
+    }
+}
+
+.button {
+}

@@ -16,4 +16,8 @@ html,body {
         max-width: unset;
         width: 100%;
     }
+
+    &--no-padding {
+        padding: 0;
+    }
 }

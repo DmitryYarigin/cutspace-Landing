@@ -5,7 +5,12 @@
 
     &__row {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 1495px) {
+            justify-content: flex-end;
+        }
     }
 
     // .objects__img
@@ -19,8 +24,11 @@
     // .objects__text
 
     &__text {
-        max-width: 543px;
+        flex-shrink: 0;
+        width: 374px;
         padding-left: 181px;
+        padding-right: 150px;
+        box-sizing: content-box;
 
         p + p {
             margin-top: 20px;
