@@ -7,8 +7,7 @@
     &__block {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        padding-right: 95px;
+        align-items: stretch;
         border-radius: 20px;
         background-color: #58bebf;  
         color: #fff;  
@@ -25,7 +24,17 @@
     // .cta__text
 
     &__text {
-        width: 364px;
+        background:
+            url('./../images/cta/bottom-left-oval.svg') bottom left -186px no-repeat,
+            url('./../images/cta/top-right-oval.svg') right top no-repeat;
+
+        
+        width: 555px;
+        padding: 0 40px 0 95px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         p {
             width: 320px;
@@ -42,8 +51,8 @@
 
     &__buttons-row {
         margin-top: 30px;
+        display: flex;
+        column-gap: 20px;
     }
 }
 
-.button {
-}
