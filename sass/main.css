@@ -59,6 +59,17 @@ html, body {
   padding: 0;
 }
 
+.visually-hidden {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  display: block;
+  margin-left: -10000px;
+  background: transparent;
+  font-size: 0;
+}
+
 .nav {
   padding-top: 35px;
   padding-bottom: 33px;
@@ -124,6 +135,7 @@ html, body {
 }
 
 .form {
+  display: flex;
   background: #fff;
   box-shadow: 0 17px 42px rgba(0, 0, 0, 0.12);
   border-radius: 29px;
@@ -138,6 +150,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-grow: 1;
   height: 100%;
   padding-left: 72px;
 }
@@ -332,8 +345,20 @@ html, body {
 }
 
 .serve {
-  padding: 60px 0 60px 0;
+  position: relative;
+  padding: 0px 0 120px 0;
+}
+.serve:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
   background-color: #f5f6fa;
+  position: absolute;
+  top: -50%;
+  bottom: 50%;
+  left: 0;
+  z-index: -1;
 }
 .serve__heading {
   text-align: center;
@@ -346,4 +371,38 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.card-customer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 88px;
+  background-color: #fff;
+  box-shadow: 0px 40px 52px -22px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  text-align: center;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+.card-customer:hover {
+  background-color: #F78434;
+  color: #fff;
+}
+.card-customer:hover .button {
+  background-color: #fff;
+  color: #f78434;
+}
+.card-customer:hover .card-customer__icon {
+  fill: #fff;
+}
+.card-customer__text {
+  margin-bottom: 25px;
+}
+.card-customer__icon {
+  margin-bottom: 15px;
+  fill: #f78434;
+  transition: fill 0.2s ease-in;
 }/*# sourceMappingURL=main.css.map */
