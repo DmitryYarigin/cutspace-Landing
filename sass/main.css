@@ -405,4 +405,95 @@ html, body {
   margin-bottom: 15px;
   fill: #f78434;
   transition: fill 0.2s ease-in;
+}
+
+.benefits {
+  padding-bottom: 110px;
+}
+.benefits__heading {
+  padding-bottom: 60px;
+  text-align: center;
+}
+.benefits__row {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+}
+
+.benefit-item {
+  text-align: center;
+}
+.benefit-item__img {
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.benefit-item__title {
+  margin-bottom: 2px;
+  font-size: 28px;
+}
+.benefit-item__img circle {
+  transition: fill 0.2s ease-in;
+  fill: rgba(88, 190, 191, 0.2);
+}
+.benefit-item__img path {
+  transition: fill 0.2s ease-in;
+  fill: #58bebf;
+}
+.benefit-item__img ellipse {
+  transition: fill 0.2s ease-in;
+  fill: #58bebf;
+}
+.benefit-item:hover .benefit-item__img circle {
+  fill: #f78434;
+}
+.benefit-item:hover .benefit-item__img path {
+  fill: #fff;
+}
+.benefit-item:hover .benefit-item__img ellipse {
+  fill: #f78434;
+}
+
+.testimonials {
+  padding: 60px 0 60px 0;
+}
+.testimonials__heading {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonials__title {
+  max-width: 452px;
+}
+.testimonials__subtitle {
+  max-width: 398px;
+}
+.testimonials__row {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.card-testimonial {
+  max-width: 350px;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease-in;
+}
+.card-testimonial:hover {
+  box-shadow: 0px 10px 52px 0px rgba(0, 0, 0, 0.08);
+}
+.card-testimonial__body {
+  padding: 30px;
+}
+.card-testimonial__text {
+  margin-bottom: 23px;
+}
+.card-testimonial__name {
+  font-size: 18px;
+  font-weight: 700;
+}
+.card-testimonial__city {
+  color: #f78434;
 }/*# sourceMappingURL=main.css.map */

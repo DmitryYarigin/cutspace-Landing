@@ -1,0 +1,39 @@
+.card-testimonial {
+    max-width: 350px; 
+    border-radius: 5px;
+    overflow: hidden;
+
+    transition: box-shadow 0.2s ease-in;
+
+    &:hover {
+        box-shadow: 0px 10px 52px 0px rgba(0, 0, 0, 0.08);
+    }
+    // .card-testimonial__img
+
+    &__img {
+    }
+
+    // .card-testimonial__body
+
+    &__body {
+        padding: 30px;
+    }
+
+    &__text {
+        margin-bottom: 23px;
+    }
+
+    // .card-testimonial__name
+
+    &__name {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    // .card-testimonial__city
+
+    &__city {
+        color: $accent-color;
+    }
+}
+ 

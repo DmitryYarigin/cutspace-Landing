@@ -1,0 +1,43 @@
+.benefit-item {
+    text-align: center;
+    // .benefit-item__img
+
+    &__img {
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+
+    // .benefit-item__title
+
+    &__title {
+        margin-bottom: 2px;
+        font-size: 28px;
+    }
+    &__img {
+        
+        circle {
+            transition: fill 0.2s ease-in;
+            fill: rgba(88, 190, 191, 0.2);
+        }
+        path {
+            transition: fill 0.2s ease-in;
+            fill: #58bebf;
+        }
+        ellipse {
+            transition: fill 0.2s ease-in;
+            fill: #58bebf;
+        }
+    }
+
+    &:hover .benefit-item__img {
+        circle {
+            fill: $accent-color;
+        }
+        path {
+            fill: #fff;
+        }
+        ellipse {
+            fill: $accent-color;
+        }
+    }
+}
