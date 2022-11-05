@@ -42,6 +42,7 @@ html, body {
   font-size: 16px;
   line-height: 1.68;
   color: #323232;
+  overflow-x: hidden;
 }
 
 .container {
@@ -473,6 +474,19 @@ html, body {
   display: flex;
   justify-content: space-between;
   text-align: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  position: relative;
+}
+.testimonials__row::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  right: -40px;
+  top: -40px;
+  background-image: url("./../images/icons/design-element.svg");
 }
 
 .card-testimonial {
@@ -483,6 +497,35 @@ html, body {
 }
 .card-testimonial:hover {
   box-shadow: 0px 10px 52px 0px rgba(0, 0, 0, 0.08);
+}
+.card-testimonial__img-wrapper {
+  position: relative;
+}
+.card-testimonial__btn-play {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  transform: translateY(25%);
+  opacity: 0;
+  transition: transform 0.2s ease-in, opacity 0.2s ease-in;
+}
+.card-testimonial:hover .card-testimonial__btn-play {
+  transform: translateY(0%);
+  opacity: 1;
+}
+.card-testimonial__btn-svg circle {
+  fill: #fff;
+  transition: fill 0.2s ease-in;
+}
+.card-testimonial__btn-svg path {
+  fill: #f78434;
+  transition: fill 0.2s ease-in;
+}
+.card-testimonial__btn-svg:hover circle {
+  fill: #f78434;
+}
+.card-testimonial__btn-svg:hover path {
+  fill: #fff;
 }
 .card-testimonial__body {
   padding: 30px;
@@ -495,5 +538,50 @@ html, body {
   font-weight: 700;
 }
 .card-testimonial__city {
+  color: #58BEBF;
+  transition: color 0.2s ease-in;
+}
+.card-testimonial:hover .card-testimonial__city {
   color: #f78434;
+}
+
+.contacts {
+  padding: 200px 0 55px 0;
+  background-image: url("./../../images/footer/footer-bg.svg");
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+.contacts::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 743px;
+  height: 372px;
+  bottom: 0;
+  left: 50%;
+  background-image: url("./../../images/footer/footer-oval.svg");
+  background-size: initial;
+}
+.contacts::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 478px;
+  height: 547px;
+  bottom: 0;
+  left: 50%;
+  margin-left: 79px;
+  background-image: url("./../../images/footer/Image-girl.png");
+  background-size: initial;
+}
+.contacts__info {
+  max-width: 360px;
+}
+.contacts__title {
+  margin-bottom: 15px;
+}
+.contacts__text {
+  margin-bottom: 30px;
+  max-width: 322px;
 }/*# sourceMappingURL=main.css.map */

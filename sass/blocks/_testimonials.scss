@@ -28,7 +28,18 @@
             display: flex;
             justify-content: space-between;
             text-align: center;
+			column-gap: 30px;
+			position: relative;
+
+			&::after {
+				content: "";
+				display: block;
+				position: absolute;
+				width: 80px;
+				height: 80px;
+				right: -40px;
+				top: -40px;
+				background-image: url("./../images/icons/design-element.svg");
+			}
 		}
-}
-.title {
 }
